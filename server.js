@@ -1,5 +1,15 @@
 const express = require('express');
 const app = express();
+const cors = require("cors");
+app.use(
+
+    cors({
+  
+      origin: "*",
+  
+    })
+  
+  );
 
 // Importar conexion mongoDB
 const archivoBD = require('./conexion')
